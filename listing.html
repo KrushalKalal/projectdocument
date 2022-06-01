@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        type="text/css">
+      
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="listing.css" type="text/css">
+        <title>Shopping Hub</title>
+    </head>
+    <body>
+        <!--Navbar start-->
+        <section class="navbar_section">
+           <nav class="navbar fixed-top navbar-expand-lg bg-light">
+               <div class="container-fluid">
+                   <a class="navbar-brand me-4" href="index.html"><img src="images/hublogo.png" alt="logo"></a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Men</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Women</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">kids</a>
+                      </li>
+                    </ul>
+                    <form>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                         <i class="fas fa-search  postion_search"></i>
+                    </form>
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-heart"></i></a>
+                            <span class="items_list">10</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                            <span class="cart_list">5</span>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign In/ Join Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Customer Care</a>
+                        </li>
+                    </ul>
+                   
+                  </div>
+               </div>
+           </nav>
+        </section>
+        <!--Navbar end-->
+        
+        
+        <!--filter and content section start-->
+        <section class="container-fluid listing_content">
+                <div class="row">
+                    <!--filter section start-->
+                      <div class="col-lg-3 filter">
+                         <div class="filters">
+                                <div class="title">
+                                    <span>Shopping Hub</span>
+                                </div>
+                                <!--Gender-->
+                                <div class="filter_gender filter_margin">
+                                    <span>Gender</span>
+                                     <div>
+                                         <input type="checkbox" name="gender">
+                                         <label>Male</label>
+                                     </div>
+                                     <div>
+                                        <input type="checkbox" name="gender">
+                                        <label>Female</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="gender">
+                                        <label>Boys</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="gender">
+                                        <label>Girls</label>
+                                    </div>
+                                </div>
+                                 <!--Category-->
+                                <div class="filter_category filter_margin">
+                                    <span>Category</span>
+                                     <div>
+                                         <input type="checkbox" name="category">
+                                         <label>Topwear</label>
+                                     </div>
+                                     <div>
+                                        <input type="checkbox" name="category">
+                                        <label>Bottomwear</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="category">
+                                        <label>Innerwear</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="category">
+                                        <label>Footwear</label>
+                                    </div>
+                                 </div>
+                                  <!--Price-->
+                                <div class="filter_price filter_margin">
+                                    <span>Price</span>
+                                     <div>
+                                         <input type="radio" name="price">
+                                         <label>Less than <i class="fa-solid fa-indian-rupee-sign"></i> 500</label>
+                                     </div>
+                                     <div>
+                                        <input type="radio" name="price">
+                                        <label><i class="fa-solid fa-indian-rupee-sign"></i> 500 to <i class="fa-solid fa-indian-rupee-sign"></i> 1000</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="price">
+                                        <label><i class="fa-solid fa-indian-rupee-sign"></i> 1000 to <i class="fa-solid fa-indian-rupee-sign"></i> 1500</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="price">
+                                        <label><i class="fa-solid fa-indian-rupee-sign"></i> 1500 to <i class="fa-solid fa-indian-rupee-sign"></i> 2000</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="price">
+                                        <label>More than <i class="fa-solid fa-indian-rupee-sign"></i> 2000</label>
+                                    </div>
+                                </div>
+                                 <!--Brands-->
+                                <div class="filter_brand filter_margin">
+                                    <span>Brands</span>
+                                     <div>
+                                         <input type="checkbox" name="brand">
+                                         <label>Puma</label>
+                                     </div>
+                                     <div>
+                                        <input type="checkbox" name="brand">
+                                        <label>Levi's</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="brand">
+                                        <label>Dillinger</label>
+                                    </div>
+                                    <div>
+                                       <input type="checkbox" name="brand">
+                                       <label>AllenSolly</label>
+                                   </div>
+                                   <div>
+                                    <input type="checkbox" name="brand">
+                                    <label>VanHeusen</label>
+                                   </div>
+                                   <a href="#" class="more_color">More</a>
+                                </div>
+                                 <!--Occation-->
+                                <div class="filter_occation filter_margin">
+                                    <span>Size</span>
+                                     <div>
+                                         <input type="checkbox" name="occation">
+                                         <label>Casual</label>
+                                     </div>
+                                     <div>
+                                        <input type="checkbox" name="occation">
+                                        <label>Work</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="occation">
+                                        <label>Ethnic</label>
+                                    </div>
+                                    <div>
+                                       <input type="checkbox" name="occation">
+                                       <label>Party</label>
+                                   </div>
+                                </div>
+                                 <!--Discount-->
+                                <div class="filter_discount filter_margin">
+                                    <span>Discount</span>
+                                     <div>
+                                         <input type="checkbox" name="discount">
+                                         <label>70% or more</label>
+                                     </div>
+                                     <div>
+                                        <input type="checkbox" name="discount">
+                                        <label>60% or more</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="discount">
+                                        <label>50% or more</label>
+                                    </div>
+                                    <div>
+                                       <input type="checkbox" name="discount">
+                                       <label>40% or more</label>
+                                   </div>
+                                   <div>
+                                    <input type="checkbox" name="discount">
+                                    <label>30% or more</label>
+                                   </div>
+                                </div>
+                                <!--size-->
+                                <div class="filter_size filter_margin">
+                                    <span>Size&Feet</span>
+                                     <div>
+                                         <input type="checkbox" name="size">
+                                         <label>S</label>
+                                     </div>
+                                     <div>
+                                        <input type="checkbox" name="size">
+                                        <label>M</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="size">
+                                        <label>L</label>
+                                    </div>
+                                    <div>
+                                       <input type="checkbox" name="size">
+                                       <label>XL</label>
+                                   </div>
+                                   <div>
+                                    <input type="checkbox" name="discount">
+                                    <label>XXL</label>
+                                   </div>
+                                </div>
+                                <!--Color-->
+                                <div class="filter_color filter_margin">
+                                    <span>Color</span>
+                                     <div>
+                                         <input type="checkbox" name="color">
+                                         <label>Red</label>
+                                     </div>
+                                     <div>
+                                        <input type="checkbox" name="color">
+                                        <label>Yellow</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="color">
+                                        <label>Blue</label>
+                                    </div>
+                                    <div>
+                                       <input type="checkbox" name="color">
+                                       <label>Green</label>
+                                   </div>
+                                   <div>
+                                    <input type="checkbox" name="color">
+                                    <label>Pink</label>
+                                   </div>
+                                   <a href="#" class="more_color">More</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--filter section end-->
+        
+                        <!--content section start-->
+                          <div class="col-lg-9 content">
+                              <!--Product 1-3-->
+                              <div class="row">
+                                  <div class="col-lg-4 product_list_img">
+                                     <a href="#"><img src="images/filter_png/product1.png" alt="product1"></a>
+                                     <div class="product_desc">
+                                     <div class="brand_name">SUPERDRY</div>
+                                     <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                     <div class="product_price">
+                                         <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                         <s>2,999</s>
+                                         <span class="price_discount">(23% off)</span>
+                                    </div>
+
+                                     <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                  </div>
+                                    </div>
+                                  <div class="col-lg-4 product_list_img">
+                                    <a href="#"><img src="images/filter_png/product2.png" alt="product2"></a>
+                                    <div class="product_desc">
+                                        <div class="brand_name">SUPERDRY</div>
+                                        <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                        <div class="product_price">
+                                            <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                            <s>2,999</s>
+                                            <span class="price_discount">(23% off)</span>
+                                       </div>
+   
+                                        <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                     </div>
+                                 </div>
+                                 <div class="col-lg-4 product_list_img">
+                                    <a href="#"><img src="images/filter_png/product3.png" alt="product3"></a>
+                                    <div class="product_desc">
+                                        <div class="brand_name">SUPERDRY</div>
+                                        <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                        <div class="product_price">
+                                            <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                            <s>2,999</s>
+                                            <span class="price_discount">(23% off)</span>
+                                       </div>
+   
+                                        <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                     </div>
+                                 </div>
+                              </div>
+                               <!--Product 4-6-->
+                              <div class="row">
+                                <div class="col-lg-4 product_list_img">
+                                   <a href="#"><img src="images/filter_png/product4.png" alt="product4"></a>
+                                   <div class="product_desc">
+                                   <div class="brand_name">SUPERDRY</div>
+                                   <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                   <div class="product_price">
+                                       <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                       <s>2,999</s>
+                                       <span class="price_discount">(23% off)</span>
+                                  </div>
+
+                                   <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                </div>
+                                  </div>
+                                <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product5.png" alt="product5"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product6.png" alt="product6"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                                <!--Product 7-9-->
+                               <div class="row">
+                                <div class="col-lg-4 product_list_img">
+                                   <a href="#"><img src="images/filter_png/product7.png" alt="product7"></a>
+                                   <div class="product_desc">
+                                   <div class="brand_name">SUPERDRY</div>
+                                   <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                   <div class="product_price">
+                                       <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                       <s>2,999</s>
+                                       <span class="price_discount">(23% off)</span>
+                                  </div>
+
+                                   <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                </div>
+                                  </div>
+                                <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product8.png" alt="product8"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product9.png" alt="product9"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                            </div>
+                             <!--Product 10-12--> 
+                            <div class="row">
+                                <div class="col-lg-4 product_list_img">
+                                   <a href="#"><img src="images/filter_png/product10.png" alt="product10"></a>
+                                   <div class="product_desc">
+                                   <div class="brand_name">SUPERDRY</div>
+                                   <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                   <div class="product_price">
+                                       <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                       <s>2,999</s>
+                                       <span class="price_discount">(23% off)</span>
+                                  </div>
+
+                                   <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                </div>
+                                  </div>
+                                <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product11.png" alt="product11"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product12.png" alt="product12"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                            </div>
+                             <!--Product 13-15-->
+                            <div class="row">
+                                <div class="col-lg-4 product_list_img">
+                                   <a href="#"><img src="images/filter_png/product13.png" alt="product13"></a>
+                                   <div class="product_desc">
+                                   <div class="brand_name">SUPERDRY</div>
+                                   <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                   <div class="product_price">
+                                       <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                       <s>2,999</s>
+                                       <span class="price_discount">(23% off)</span>
+                                  </div>
+
+                                   <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                </div>
+                                  </div>
+                                <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product14.png" alt="product14"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product15.png" alt="product15"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                            </div>
+                             <!--Product 16-18-->
+                            <div class="row">
+                                <div class="col-lg-4 product_list_img">
+                                   <a href="#"><img src="images/filter_png/product16.png" alt="product16"></a>
+                                   <div class="product_desc">
+                                   <div class="brand_name">SUPERDRY</div>
+                                   <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                   <div class="product_price">
+                                       <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                       <s>2,999</s>
+                                       <span class="price_discount">(23% off)</span>
+                                  </div>
+
+                                   <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                </div>
+                                  </div>
+                                <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product17.png" alt="product17"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product18.png" alt="product18"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                            </div>
+                             <!--Product 19-21-->
+                            <div class="row">
+                                <div class="col-lg-4 product_list_img">
+                                   <a href="#"><img src="images/filter_png/product19.png" alt="product19"></a>
+                                   <div class="product_desc">
+                                   <div class="brand_name">SUPERDRY</div>
+                                   <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                   <div class="product_price">
+                                       <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                       <s>2,999</s>
+                                       <span class="price_discount">(23% off)</span>
+                                  </div>
+
+                                   <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                </div>
+                                  </div>
+                                <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product20.png" alt="product20"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963</div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-4 product_list_img">
+                                  <a href="#"><img src="images/filter_png/product21.png" alt="product21"></a>
+                                  <div class="product_desc">
+                                      <div class="brand_name">SUPERDRY</div>
+                                      <div class="product_about">Classic Pique Tailored Fit Polo T-shirt</div>
+                                      <div class="product_price">
+                                          <span class="pricing"><i class="fa-solid fa-indian-rupee-sign"></i>2,309</span>
+                                          <s>2,999</s>
+                                          <span class="price_discount">(23% off)</span>
+                                     </div>
+ 
+                                      <div class="offer_price">Offer Price <i class="fa-solid fa-indian-rupee-sign"></i>1,963
+                                    </div>
+                                   </div>
+                               </div>
+                            </div>
+                         </div>
+
+                          </div>
+                        <!--content section start-->
+                    </div>
+                </section>
+                <!--filter and content section end-->
+        
+        
+       
+
+
+
+        <!--Section cares start-->
+              <section class="cares container-fluid">
+                  <div class="row">
+                      <h2 class="col-lg-12">SHOPPING HUB CARES</h2>
+                  </div>
+                  <div class="row">
+                      <h5 class="col-lg-12">WE DO NOT ASK FOR YOUR BANK ACCOUNT OR CARD DETAILS VERBALLY OR TELEPHONICALLY.</h5>
+                  </div>
+                  <div class="row">
+                      <h5 class="col-lg-12">WE ALSO DO NOT ASK FOR MONEY TO PARTICIPATE IN ANY OF OUR OFFERS OR RUN ANY LUCKY DRAWS.</h5>
+                  </div>
+              </section>
+
+        <!--Section cares end-->
+
+        <!--Section quality start-->
+              <section class="quality container">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                          <img src="images/exchange.png" alt="exchange">
+                          <h6>EASY EXCHANGE</h6>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img src="images/handpicked.png" alt="handpicked">
+                        <h6>100% HANDPICKED</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img src="images/quality.png" alt="quality">
+                        <h6>ASSURED QUALITY</h6>
+                    </div>
+                  </div>
+              </section>
+        <!--Section quality end-->
+
+        <!--Footer starts-->
+        <footer class="footer_hub container-fluid">
+            <div class="footer_hub">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Shopping Hub
+                    </span>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">We Respect Your Privacy</a></li>
+                        <li><a href="#">Fees & Payment</a></li>
+                        <li><a href="#">Return & Refunds Policy</a></li>
+                        <li><a href="#">Promotion Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Help
+                    </span>
+                    <ul>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">How I Redeem My Coupon</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Shop By
+                    </span>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Brand Directory</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Collection</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Follow Us
+                    </span>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                       
+                    </ul>
+                </div>
+               
+            </div>
+            <hr />
+            <div class="payment">
+                <div class="row payment_section">
+                    <div class="col-lg-8 ms-4">
+                        <span>Payment Methods</span>
+                        <div class="row">
+                        <div class="col-lg-2">
+                            <img src="images/netbanking.png" alt="netbanking">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/visa.png" alt="visa">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/card.png" alt="card">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/cashon.png" alt="cash">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/wallet.png" alt="wallet">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-2 ms-auto">
+                        <span>Secure Systems</span>
+                        <div>
+                            <img src="images/security.png" alt="security">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+        <!--Footer end-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

@@ -1,0 +1,296 @@
+body { 
+    padding-top: 65px; 
+}
+/*navbar css*/
+.navbar{
+   height: auto;
+   background-color: wheat !important;
+  
+}
+.postion_search{
+    position: absolute;
+    top: 29.5px;
+    left: 48%;
+}
+.items_list{
+    position: absolute;
+    top: 16.4px;
+    left: 51.3%;
+    background-color: rgb(184,34,46);
+    color:white;
+    width:15px;
+    font-size: 10px;
+    text-align: center;
+}
+.cart_list{
+    position: absolute;
+    top: 16.4px;
+    left: 54.3%;
+    background-color: rgb(184,34,46);
+    color:white;
+    width:15px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/*main_carousel css*/
+.main_carousel_img{
+    height: auto;
+    margin-top: 10.9px;
+    margin-bottom: 45px;
+}
+.main_carousel_indicators{
+    bottom: -22px;
+    left:100px;
+}
+.main_carousel_indicators [data-bs-target]{
+    background-color: rgb(36, 94, 74) !important;
+}
+
+/*wallet carousel css*/
+.wallet_carousel_img{
+    margin-top: -10px;
+    height:auto;
+    margin-bottom: 45px;
+}
+.wallet_carousel_indicators{
+    bottom: -20.1%;
+    right: -32px;
+}
+.wallet_carousel_indicators [data-bs-target]{
+    background-color: rgb(36, 94, 74) !important;
+}
+.img-thumbnail{
+    height:80%
+}
+
+
+/*extra offer card css*/
+.extra_offer_card .row{
+    height: auto;
+    width: 100%;
+}
+.offer_image{
+    width:25%;
+}
+.offer_image img{
+    width: 100%;
+    margin-left: 10px;
+    border: 1px solid bisque;
+    margin-bottom: 40px;
+}
+
+
+/*her carousel css*/
+.her_carousel_img{
+    height:auto;
+    margin-bottom: 45px;
+    outline: none;
+}
+.her_carousel_img{
+    text-align: center;
+    color: rgb(49, 189, 189);
+    font-style: italic;
+}
+.her_carousel_indicators{
+    bottom: -22px;
+    left: 100px;
+}
+.her_carousel_indicators [data-bs-target]{
+    background-color: rgb(49, 189, 189) !important;
+}
+
+
+/*him carousel css*/
+.him_carousel_img{
+    height:auto;
+    margin-bottom: 50px;
+}
+.him_carousel_img div h2{
+    text-align: center;
+    color: rgb(49, 189, 189);
+    font-style: italic;
+}
+.him_carousel_indicators{
+    bottom: -22px;
+    left: 100px;
+}
+.him_carousel_indicators [data-bs-target]{
+    background-color: rgb(49, 189, 189) !important;
+}
+
+
+/*additional offer carousel css*/
+.additional_carousel{
+   margin-top:20px;
+   margin-bottom: 50px;
+   height: 20vh;
+}
+.additional_carousel_indicators{
+    bottom: -35px;
+    right:25px;
+}
+.discount{
+    height:17vh;
+}
+.additional_carousel_indicators [data-bs-target]{
+    background-color: rgb(36, 94, 74) !important;
+}
+
+
+/*offer carousel css*/
+.offer_carousel_img{
+    height:auto;
+    margin-bottom: 50px;
+}
+
+
+/*combine carousel css*/
+.combine_carousel_img{
+    height:auto;
+    margin-bottom: 50px;
+}
+.combine_carousel_indicators{
+    bottom: -25px;
+    left: 100px;
+}
+.combine_carousel_indicators [data-bs-target]{
+    background-color: rgb(36, 94, 74) !important;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: black;
+}
+
+
+/*premium brands card css*/
+.premium_brands{
+    height:auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.premium_brands div>h2{
+    text-align: center;
+    color: rgb(49, 189, 189);
+    font-style: italic;
+}
+.premium_brands, .row{
+    width: 100%;
+}
+.brand_img{
+    width: 25%;
+}
+.brand_img img{
+    width: 100%;
+    margin-left: 10px;
+}
+
+/*footwear card css*/
+.footwear_card{
+    height:auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.footwear_card div>h2{
+    text-align: center;
+    color: rgb(49, 189, 189);
+    font-style: italic;
+}
+.footwear_card .row{
+    width: 100%;
+}
+.footwear_image{
+    width: 25%;
+}
+.footwear_image img{
+    width: 100%;
+    margin-left: 10px;
+}
+
+/*products card css*/
+.product_card{
+    height:auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.product_card div>h2{
+    text-align: center;
+    color: rgb(49, 189, 189);
+    font-style: italic;
+}
+.product_card .row{
+    width: 100%;
+}
+.product_image{
+    width: 25%;
+}
+.product_image img{
+    width: 100%;
+    margin-left: 10px;
+}
+
+/*cares section css start*/
+.cares{
+    width: 100%;
+    margin-top:20px;
+    height: auto;
+    border:2px solid rgba(228, 228, 166, 0.973);
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}  
+.cares div>h2{
+    color: rgba(228, 228, 166, 0.788);
+}
+/*cares section css end*/
+
+/*quality section css start*/
+.quality{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+.quality div div h6{
+    margin-top:6px;
+}
+/*cares section css end*/
+
+
+/*footer section css start*/
+.footer_hub{
+    width: 100%;
+    height: auto;
+    background-color: #2c3e50;
+    color: white;
+}
+.footer_link{
+    padding: 40px 5px;
+}
+.footer_link span{
+    margin-left: 32px;
+}
+.footer_link ul{
+    margin-top: 20px;
+}
+.footer_link ul li{
+    list-style: none;
+    margin: 3px 0;
+    font-size: 12px;
+}
+.footer_link ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer_link ul li a:hover{
+    text-decoration: underline;
+}
+.payment_section{
+    width:100%;
+}
+hr{
+    margin-left: 25px;
+    width:93%;
+}
+/*footer section css end*/
+

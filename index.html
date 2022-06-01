@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <title>Shopping Hub</title>
+    </head>
+    <body>
+        <!--Navbar start-->
+        <section class="navbar_section">
+           <nav class="navbar fixed-top navbar-expand-lg bg-light">
+               <div class="container-fluid">
+                   <a class="navbar-brand me-4" href="#"><img src="images/hublogo.png" alt="logo"></a>
+                   <!-- <img src="images/logo_shoppinghub.png" alt="logo"> -->
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Men</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Women</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">kids</a>
+                      </li>
+                    </ul>
+                    <form>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                         <i class="fas fa-search  postion_search"></i>
+                    </form>
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-heart"></i></a>
+                            <span class="items_list">10</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                            <span class="cart_list">5</span>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign In/ Join Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Customer Care</a>
+                        </li>
+                    </ul>
+                   
+                  </div>
+               </div>
+           </nav>
+        </section>
+        <!--Navbar end-->
+
+        <!--Main carousel start-->
+        <section class="main_carousel_img carousel_margin">
+        <div id="main_carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators main_carousel_indicators">
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#main_carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <a href="listing.html"> <img src="images/main_carousel/main_carousel_img1.png" class="d-block w-100" alt="..."></a>
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img5.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img6.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img7.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img8.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/main_carousel/main_carousel_img9.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </section>
+      <!--Main carousel end-->
+
+
+      <!--Wallet carousel start-->
+      <section class="wallet_carousel_img carousel_margin">
+      <div id="wallet_carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators wallet_carousel_indicators">
+          <button type="button" data-bs-target="#wallet_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#wallet_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/wallet/wallet_mobiquick.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/wallet/wallet_paytm.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       </div>
+     </section>
+     <!--Wallet carousel end-->
+
+       <!--extra offer card start-->
+       <section class="extra_offer_card">
+         <div class="row">
+            <div class="col-lg-3 offer_image">
+              <a href="#"><img src="images/flat_img/extra30.png" alt="extra30"></a>
+            </div>
+            <div class="col-lg-3 offer_image">
+              <a href="#"><img src="images/flat_img/extra35.png" alt="extra35"></a>
+            </div>
+            <div class="col-lg-3 offer_image">
+              <a href="#"><img src="images/flat_img/extra66.png" alt="extra66"></a>
+            </div>
+            <div class="col-lg-3 offer_image">
+              <a href="#"><img src="images/flat_img/extra84.png" alt="extra84"></a>
+            </div>
+         </div>
+        
+       </section>
+     <!--extra offer card end-->
+
+
+      <!--for her carousel start-->
+      <section class="her_carousel_img">
+          <div>
+              <h2>STUNNING DEALS FOR HER</h2>
+          </div>
+      <div id="her_carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators her_carousel_indicators">
+          <button type="button" data-bs-target="#her_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#her_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#her_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#her_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#her_carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#her_carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/her_carousel/her_carousel_img1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/her_carousel/her_carousel_img2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/her_carousel/her_carousel_img3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/her_carousel/her_carousel_img4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/her_carousel/her_carousel_img5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/her_carousel/her_carousel_img6.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       </div>
+    </section>
+    <!--for her carousel end-->
+
+
+    <!--summer style card start-->
+       <section class="product_card">
+        <div>
+          <h2>FRESH SUMMER STYLES TO OWN</h2>
+        </div>
+       <div class="row">
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product12.png" alt="summer_product_1"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product13.png" alt="summer_product_2"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product14.png" alt="summer_product_3"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product15.png" alt="summer_product_4"></a>
+          </div>
+       </div>
+    </section>
+    <!--summer style card end-->
+
+
+
+      <!--for him carousel start-->
+      <section class="him_carousel_img">
+        <div>
+            <h2>STRIKING DEALS FOR HIM</h2>
+        </div>
+      <div id="him_carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators him_carousel_indicators">
+          <button type="button" data-bs-target="#him_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#him_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#him_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#him_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#him_carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#him_carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/him_carousel/him_carousel_img1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/him_carousel/him_carousel_img2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/him_carousel/him_carousel_img3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/him_carousel/him_carousel_img4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/him_carousel/him_carousel_img5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/him_carousel/him_carousel_img6.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       </div>
+       </section>
+       <!--for him carousel end-->
+
+      
+       <!--coveted brand card start-->
+       <section class="product_card">
+        <div>
+          <h2>COVETED BRAND DEALS</h2>
+        </div>
+       <div class="row">
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product1.png" alt="coveted_product_1"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product2.png" alt="coveted_product_2"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product3.png" alt="coveted_product_3"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product4.png" alt="coveted_product_4"></a>
+          </div>
+       </div>
+      </section>
+     <!--coveted brand card end-->
+
+
+      <!--Additional offer carousel start-->
+      <section class="additional_carousel">      
+        <div id="Additional_offer_carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators additional_carousel_indicators">
+          <button type="button" data-bs-target="#Additional_offer_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#Additional_offer_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/offer/additional_freedelivery.png" class="d-block w-100 discount" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/offer/additional_discount.png" class="d-block w-100" alt="...">
+          </div>
+       
+        </div>
+       </div>
+    </section>
+    <!--Additional offer carousel end-->
+
+      <!--unmissable brand card start-->
+       <section class="product_card">
+        <div>
+          <h2>UNMISSABLE BRANDS THIS SEASON</h2>
+        </div>
+       <div class="row">
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product5.png" alt="unmissable_product_1"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product6.png" alt="unmissable_product_2"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product7.png" alt="unmissable_product_3"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product9.png" alt="unmissable_product_4"></a>
+          </div>
+       </div>
+      </section>
+      <!--unmissable brand card end-->
+
+    
+
+    <!--Offer carousel start-->
+     <section class="offer_carousel_img">
+       <img src="images/offer/offer_300.png" class="d-block w-100 offer_discount" alt="...">
+     </section>
+    <!--Offer carousel end-->
+
+          <!--discount offer carousel start-->
+          <section class="extra_offer_card">
+            <div class="row">
+               <div class="col-lg-3 offer_image">
+                 <a href="#"><img src="images/flat_img/flat_599.png" alt="flat_599"></a>
+               </div>
+               <div class="col-lg-3 offer_image">
+                 <a href="#"><img src="images/flat_img/flat_699.png" alt="flat_699"></a>
+               </div>
+               <div class="col-lg-3 offer_image">
+                 <a href="#"><img src="images/flat_img/flat_999.png" alt="flat_999"></a>
+               </div>
+               <div class="col-lg-3 offer_image">
+                 <a href="#"></a><img src="images/flat_img/flat_80.png" alt="flat_80"></a>
+               </div>
+            </div>
+           
+          </section>
+          <!--discount offer carousel end-->
+      
+
+    <!--combine carousel start-->
+       <section class="combine_carousel_img">
+       <div id="combine_carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators combine_carousel_indicators">
+          <button type="button" data-bs-target="#combine_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#combine_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#combine_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#combine_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#combine_carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/combine_carousel/combine_carousel_img1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/combine_carousel/combine_carousel_img2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/combine_carousel/combine_carousel_img3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/combine_carousel/combine_carousel_img4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/combine_carousel/combine_carousel_img5.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       </div> 
+      </section>
+       <!--combine carousel end -->
+
+      <!--ethnic brand card start--> 
+       <section class="product_card">
+        <div>
+          <h2>GRACEFUL ETHNICWEAR</h2>
+        </div>
+       <div class="row">
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product17.png" alt="ethnic_product_1"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product18.png" alt="ethnic_product_2"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product19.png" alt="ethnic_product_3"></a>
+          </div>
+          <div class="col-lg-3 product_image">
+            <a href="#"><img src="images/product/product20.png" alt="ethnic_product_4"></a>
+          </div>
+       </div>
+      </section>
+      <!--ethnic brand card end-->
+
+      <!--premium brand card start-->
+       <section class="premium_brands">
+          <div>
+            <h2>STUNNING DEALS ON PREMIUM BRANDS
+          </div>
+          <div class="row brand_row">
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product21.png" alt="brand_product_1"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product22.png" alt="brand_product_2"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product23.png" alt="brand_product_3"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product24.png" alt="brand_product_4"></a>
+            </div>
+          </div>
+          <div class="row brand_row">
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product25.png" alt="brand_product_5"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product26.png" alt="brand_product_6"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product27.png" alt="brand_product_7"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product28.png" alt="brand_product_8"></a>
+            </div>
+          </div>
+          <div class="row brand_row">
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product29.png" alt="brand_product_9"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product30.png" alt="brand_product_10"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product31.png" alt="brand_product_11"></a>
+            </div>
+            <div class="col-lg-3 brand_img">
+              <a href="#"><img src="images/product/product32.png" alt="brand_product_12"></a>
+            </div>
+          </div>
+       </section>
+       <!--premium brand card end-->
+
+       <!--footwear brand card start--> 
+       <section class="footwear_card">
+         <div>
+           <h2>FOOTWEAR MEETS FASHION</h2>
+         </div>
+        <div class="row">
+           <div class="col-lg-3 footwear_image">
+             <a href="#"><img src="images/product/product33.png" alt="footwear_product_1"></a>
+           </div>
+           <div class="col-lg-3 footwear_image">
+             <a href="#"><img src="images/product/product34.png" alt="footwear_product_2"></a>
+           </div>
+           <div class="col-lg-3 footwear_image">
+             <a href="#"><img src="images/product/product36.png" alt="footwear_product_3"></a>
+           </div>
+           <div class="col-lg-3 footwear_image">
+             <a href="#"><img src="images/product/product37.png" alt="footwear_product_4"></a>
+           </div>
+        </div>
+      </section>
+      <!--footwear brand card end-->
+
+
+
+        <!--Section cares start-->
+              <section class="cares container-fluid">
+                  <div class="row">
+                      <h2 class="col-lg-12">SHOPPING HUB CARES</h2>
+                  </div>
+                  <div class="row">
+                      <h5 class="col-lg-12">WE DO NOT ASK FOR YOUR BANK ACCOUNT OR CARD DETAILS VERBALLY OR TELEPHONICALLY.</h5>
+                  </div>
+                  <div class="row">
+                      <h5 class="col-lg-12">WE ALSO DO NOT ASK FOR MONEY TO PARTICIPATE IN ANY OF OUR OFFERS OR RUN ANY LUCKY DRAWS.</h5>
+                  </div>
+              </section>
+
+        <!--Section cares end-->
+
+        <!--Section quality start-->
+              <section class="quality container">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                          <img src="images/exchange.png" alt="exchange">
+                          <h6>EASY EXCHANGE</h6>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img src="images/handpicked.png" alt="handpicked">
+                        <h6>100% HANDPICKED</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img src="images/quality.png" alt="quality">
+                        <h6>ASSURED QUALITY</h6>
+                    </div>
+                  </div>
+              </section>
+        <!--Section quality end-->
+
+        <!--Footer starts-->
+        <footer class="footer_hub container-fluid">
+            <div class="footer_hub">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Shopping Hub
+                    </span>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">We Respect Your Privacy</a></li>
+                        <li><a href="#">Fees & Payment</a></li>
+                        <li><a href="#">Return & Refunds Policy</a></li>
+                        <li><a href="#">Promotion Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Help
+                    </span>
+                    <ul>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">How I Redeem My Coupon</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Shop By
+                    </span>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Brand Directory</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Collection</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                    <span>
+                        Follow Us
+                    </span>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                       
+                    </ul>
+                </div>
+               
+            </div>
+            <hr />
+            <div class="payment">
+                <div class="row payment_section">
+                    <div class="col-lg-8 ms-4">
+                        <span>Payment Methods</span>
+                        <div class="row">
+                        <div class="col-lg-2">
+                            <img src="images/netbanking.png" alt="netbanking">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/visa.png" alt="visa">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/card.png" alt="card">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/cashon.png" alt="cash">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/wallet.png" alt="wallet">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-2 ms-auto">
+                        <span>Secure Systems</span>
+                        <div>
+                            <img src="images/security.png" alt="security">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+        <!--Footer end-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
