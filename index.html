@@ -39,11 +39,11 @@
                     <ul class="navbar-nav me-5 mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa fa-heart"></i></a>
-                            <span class="items_list">10</span>
+                           
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
-                            <span class="cart_list">5</span>
+                         
                         </li>
                     </ul>
 
@@ -61,6 +61,11 @@
            </nav>
         </section>
         <!--Navbar end-->
+
+        <div id="coupon">
+          <button onclick="closeCoupon()">&times;</button>
+          <img src="images/coupon.png" alt="discount_coupon">
+      </div> 
 
         <!--Main carousel start-->
         <section class="main_carousel_img carousel_margin">
@@ -602,7 +607,9 @@
         </footer>
 
         <!--Footer end-->
-
+        <script src="index.js">
+          window.onload= loadCoupon()
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     </body>
