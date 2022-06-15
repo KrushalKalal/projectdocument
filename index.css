@@ -1,18 +1,66 @@
+:root{
+    --body-color:white;
+    --nav-color:white;
+    --navbar-color:black;
+    --navbarlink-color:black;
+    --dark_light-color:black;
+    --carousel-color:rgb(36, 94, 74);
+    --gender-color:rgb(49, 189, 189);
+    --genderindicator-color:rgb(49, 189, 189);
+    --footer-color:#2c3e50;
+    --footertext-color:white;
+    --cars-color:white;
+    --owl-color: rgb(248 221 123);
+    --owlcontrol-color:black;
+    --offerborder-color:bisque;
+}
+
+.dark_theme{
+    --body-color:black;
+    --nav-color:black;
+    --navbar-color:white;
+    --navbarlink-color:white;
+    --dark_light-color:white;
+    --carousel-color:black;
+    --gender-color:white;
+    --genderindicator-color:rgb(49, 189, 189);
+    --footer-color:black;
+    --footertext-color:white;
+    --cars-color:white;
+    --owl-color: rgb(248 221 123);
+    --owlcontrol-color:white !important;
+    --offerborder-color:white;
+}
+
 body { 
     padding-top: 65px; 
+    background-color: var(--body-color);
 }
 /*navbar css*/
 .navbar{
    height: auto;
-   background-color: wheat !important;
+   background-color: var(--nav-color) !important;
+   margin-bottom: 10px;
+   color: var(--navbar-color);
   
+}
+.navbar div ul li a{
+    color: var(--navbarlink-color);
+}
+.navbar div ul li a:hover{
+    color: var(--navbarlink-color);
 }
 .postion_search{
     position: absolute;
     top: 29.5px;
     left: 48%;
+    color:black;
 }
-.items_list{
+.theme{
+    color:var(--dark_light-color);
+    font-size: 22px;
+}
+/* .items_list{
     position: absolute;
     top: 16.4px;
     left: 51.3%;
@@ -31,7 +79,7 @@ body {
     width:15px;
     font-size: 10px;
     text-align: center;
-}
+} */
 
 #coupon {
     height: 55vh;
@@ -64,12 +112,13 @@ body {
     margin-top: 10.9px;
     margin-bottom: 45px;
 }
+
 .main_carousel_indicators{
     bottom: -22px;
     left:100px;
 }
 .main_carousel_indicators [data-bs-target]{
-    background-color: rgb(36, 94, 74) !important;
+    background-color: var(--carousel-color) !important;
 }
 
 /*wallet carousel css*/
@@ -78,12 +127,15 @@ body {
     height:auto;
     margin-bottom: 45px;
 }
+.wallet_carousel_img:hover{
+  transform: scaleY(1.05);
+}
 .wallet_carousel_indicators{
     bottom: -20.1%;
     right: -32px;
 }
 .wallet_carousel_indicators [data-bs-target]{
-    background-color: rgb(36, 94, 74) !important;
+    background-color: var(--carousel-color) !important;
 }
 .img-thumbnail{
     height:80%
@@ -91,17 +143,17 @@ body {
 
 
 /*extra offer card css*/
-.extra_offer_card .row{
+.extra_offer_card .offer-carousel{
     height: auto;
     width: 100%;
 }
 .offer_image{
-    width:25%;
+    width:100%;
 }
 .offer_image img{
     width: 100%;
     margin-left: 10px;
-    border: 1px solid bisque;
+    border: 1px solid var(--offerborder-color);
     margin-bottom: 40px;
 }
 
@@ -114,7 +166,7 @@ body {
 }
 .her_carousel_img{
     text-align: center;
-    color: rgb(49, 189, 189);
+    color: var(--gender-color);
     font-style: italic;
 }
 .her_carousel_indicators{
@@ -122,7 +174,7 @@ body {
     left: 100px;
 }
 .her_carousel_indicators [data-bs-target]{
-    background-color: rgb(49, 189, 189) !important;
+    background-color: var(--genderindicator-color) !important;
 }
 
 
@@ -133,7 +185,7 @@ body {
 }
 .him_carousel_img div h2{
     text-align: center;
-    color: rgb(49, 189, 189);
+    color: var(--gender-color);
     font-style: italic;
 }
 .him_carousel_indicators{
@@ -141,7 +193,7 @@ body {
     left: 100px;
 }
 .him_carousel_indicators [data-bs-target]{
-    background-color: rgb(49, 189, 189) !important;
+    background-color: var(--genderindicator-color) !important;
 }
 
 
@@ -159,7 +211,7 @@ body {
     height:17vh;
 }
 .additional_carousel_indicators [data-bs-target]{
-    background-color: rgb(36, 94, 74) !important;
+    background-color: var(--carousel-color) !important;
 }
 
 
@@ -180,10 +232,10 @@ body {
     left: 100px;
 }
 .combine_carousel_indicators [data-bs-target]{
-    background-color: rgb(36, 94, 74) !important;
+    background-color: var(--carousel-color) !important;
 }
 .carousel-control-prev, .carousel-control-next{
-    background-color: black;
+    background-color: var(--owlcontrol-color);
 }
 
 
@@ -195,7 +247,7 @@ body {
 }
 .premium_brands div>h2{
     text-align: center;
-    color: rgb(49, 189, 189);
+    color: var(--gender-color);
     font-style: italic;
 }
 .premium_brands, .row{
@@ -217,14 +269,44 @@ body {
 }
 .footwear_card div>h2{
     text-align: center;
-    color: rgb(49, 189, 189);
+    color: var(--gender-color);
     font-style: italic;
 }
-.footwear_card .row{
+.footwear_card .img-carousel{
     width: 100%;
 }
+.img-carousel .owl-item{
+    width:16% !important
+}
+.owl-nav i {
+    font-size: 35px;
+  }
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+     display: none;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    left: -4px;
+    top:42%;
+    background-color: var(--owl-color) !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+.owl-nav .owl-next {
+    position: absolute;
+    right:-5px;
+    top:42%;
+    background-color: var(--owl-color) !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
 .footwear_image{
-    width: 25%;
+    width: 100%;
 }
 .footwear_image img{
     width: 100%;
@@ -239,15 +321,27 @@ body {
 }
 .product_card div>h2{
     text-align: center;
-    color: rgb(49, 189, 189);
+    color: var(--gender-color);
     font-style: italic;
 }
-.product_card .row{
+.product_card .row {
     width: 100%;
 }
 .product_image{
     width: 25%;
 }
+
+.product_card .offer-carousel{
+    width: 100%;
+}
+.product_image_unmissable{
+    width: 100%;
+}
+
+.product_image_unmissable img{
+    width: 100%;
+} 
+
 .product_image img{
     width: 100%;
     margin-left: 10px;
@@ -259,8 +353,8 @@ body {
     margin-top:20px;
     height: auto;
     border:2px solid rgba(228, 228, 166, 0.973);
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--footer-color);
+    color: var(--footertext-color);
     text-align: center;
     cursor: pointer;
 }  
@@ -274,6 +368,7 @@ body {
     text-align: center;
     margin-top:20px;
     margin-bottom: 10px;
+    background-color: var(--cars-color);
 }
 .quality div div h6{
     margin-top:6px;
@@ -285,8 +380,8 @@ body {
 .footer_hub{
     width: 100%;
     height: auto;
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--footer-color);
+    color: var(--footertext-color);
 }
 .footer_link{
     padding: 40px 5px;
@@ -311,10 +406,189 @@ body {
 }
 .payment_section{
     width:100%;
+    padding-bottom: 5px;
+}
+.security_margin{
+    margin: auto;
 }
 hr{
     margin-left: 25px;
     width:93%;
 }
 /*footer section css end*/
+@media only screen and (min-width: 992px) and (max-width:1199px){
+    #coupon {
+        width: 33%;
+        top: 16%;
+        left: 32%;
+        height: 60vh;
+    }
+    #coupon button{
+        top: 37px;
+        left: 93%;
+    
+    }
+ }
+
+@media only screen and (min-width: 992px) and (max-width:1024px){
+   .navbar{
+       font-size: 10px;
+   }
+   .postion_search{
+    top: 37%;
+    left: 56%;
+    font-size: 16px;
+}
+}
+
+@media only screen and (min-width: 1025px) and (max-width:1180px){
+    .postion_search{
+        top: 37%;
+        left: 53%;
+        font-size: 16px;
+    }
+ }
+
+ @media only screen and (min-width: 1134px) and (max-width:1240px){
+    .postion_search{
+        top: 37%;
+        left: 50%;
+    }
+ }
+@media only screen and (min-width: 1025px) and (max-width:1179px){
+    .navbar{
+        font-size: 12px;
+    }
+    .postion_search{
+        top: 37%;
+        left: 57%;
+        font-size: 16px;
+    }
+ }
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .footer_link{
+        padding: 10px 5px;
+    }
+    .footer_link ul{
+        margin-top: 10px;
+    }
+    hr{
+        margin-left: 20px;
+        width:90%;
+    }
+    .security_margin{
+        margin-top: -10px;
+        margin-left: 50px;
+    } 
+    .security_margin img{
+        margin-left: -10px;
+    }
+    .cares div>h5{
+        font-size: 14px;
+    }
+    .postion_search{
+        top: 44%;
+        left: 94%;
+    }
+    #coupon {
+        width: 42%;
+        top: 18%;
+        left: 24%;
+        height: 62vh;
+    }
+    #coupon button{
+        top: 37px;
+        left: 93%;
+    
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:767px) {
+     
+     .footer_link{
+        padding: 10px 5px;
+    }
+    .footer_link ul{
+        margin-top: 10px;
+    }
+    hr{
+        margin-left: 10px;
+        width:90%;
+    }
+    .security_margin{
+        margin-top: -10px;
+        margin-left: -3px;
+    } 
+    .cares div>h5{
+        font-size: 14px;
+    }
+    .postion_search{
+        top: 44%;
+        left: 94%;
+    }
+
+    #coupon {
+        width: 63%;
+        top: 18%;
+        left: 18.2%;
+        height: 68vh;
+    }
+    #coupon button{
+        top: 37px;
+        left: 93%;
+    
+    }
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width:575px) {
+     .footer_hub{
+         text-align: center;
+     }
+    .footer_link{
+       padding: 4px 5px;
+   }
+   .footer_link ul{
+       margin-top: 10px;
+   }
+   hr{
+       margin-left: 5%;
+       width:90%;
+   }
+   .security_margin{
+       margin-left: 10px;
+   } 
+
+   .cares div>h2{
+    font-size: 22px;
+    margin-left: 10px;
+  }
+   .cares div>h5{
+       font-size: 10px;
+       margin-left: 10px;
+   }
+   .quality{
+    text-align: center;
+   }
+   .quality div div img,h6{
+    margin-left:35px;
+}
+   .postion_search{
+    top: 44%;
+    left: 88%;
+}
+
+#coupon {
+    width: 83%;
+    top: 12%;
+    left: 9.2%;
+}
+#coupon button{
+    top: 30px;
+    left: 91%;
+
+}
+   
+}
 

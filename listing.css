@@ -1,5 +1,39 @@
+:root{
+    --body-color:white;
+    --nav-color:white;
+    --navbar-color:black;
+    --navbarlink-color:black;
+    --dark_light-color:black;
+    --filter_bg-color:white;
+    --filter_border-color:white;
+    --filter_title-color:rgb(48, 43, 43);
+    --filter_color:rgb(90, 87, 87);
+    --filter_shadow:rgb(0 0 0 / 10%);
+    --footer-color:#2c3e50;
+    --footertext-color:white;
+    --cars-color:white;
+
+}
+
+.dark_listing_theme{
+    --body-color:black;
+    --nav-color:black;
+    --navbar-color:white;
+    --navbarlink-color:white;
+    --dark_light-color:white;
+    --filter_bg-color:black;
+    --filter_border-color:white;
+    --filter_title-color:rgb(235, 228, 228);
+    --filter_color:rgb(235, 228, 228);
+    --filter_shadow:rgba(241, 235, 235, 0.952);
+    --footer-color:black;
+    --footertext-color:white;
+    --cars-color:white;
+}
+
 body { 
     padding-top: 65px; 
+    background-color: var(--body-color);
 }
 /*link css*/
 a{
@@ -8,31 +42,29 @@ a{
 
 /*navbar css start*/
 .navbar{
-   height: auto;
-   background-color: wheat !important;
+    height: auto;
+    background-color: var(--nav-color) !important;
+    margin-bottom: 10px;
+    color: var(--navbar-color);
+   
+ }
+ .navbar div ul li a{
+    color: var(--navbarlink-color);
 }
-.postion_search{
+.navbar div ul li a:hover{
+    color: var(--navbarlink-color);
+}
+ .postion_search{
     position: absolute;
     top: 29.5px;
     left: 48%;
+    color:black;
 }
-
-.items_list{
-    position: absolute;
-    top: 7.4px;
-    left: 51.3%;
-    background-color: rgb(184,34,46);
-    color:white;
-    width:20px;
+.theme{
+    color:var(--dark_light-color);
+    font-size: 22px;
 }
-.cart_list{
-    position: absolute;
-    top: 7.4px;
-    left: 54.3%;
-    background-color: rgb(184,34,46);
-    color:white;
-    width:20px;
-}
+ 
 /*navbar css end*/
 
 
@@ -45,15 +77,15 @@ a{
 
 /*filter section css start*/  
 .filter{
-    border:2px solid #fff;
-    background-color: #fff;
+    border:2px solid var(--filter_border-color);
+    background-color: var(--filter_bg-color);
     border-radius: 3px;
     height: 210vh;
     width:19%;
     margin:0 15px;
     padding: 15px;
-    color:rgb(90, 87, 87);
-    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+    color:var(--filter_color);
+    box-shadow: 0 3px 8px 0 var(--filter_shadow);
 }
 .filter_margin{
     margin:15px 0;
@@ -63,7 +95,7 @@ a{
 }
 .title{
     font-size:20px;
-    color:rgb(48, 43, 43)
+    color:var(--filter_title-color);
 }
 .search_title{
     margin-top:10px;
@@ -101,15 +133,15 @@ a{
 
 /*Content section css start*/
 .content{
-    border:2px solid #fff;
-    background-color: #fff;
+    border:2px solid var(--filter_border-color);
+    background-color: var(--filter_bg-color);
     border-radius: 3px;
     margin-left: 5px;
     margin-bottom: 40px;
     height: auto;
     width:76.4%;
     padding: 15px 20px;
-    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 3px 8px 0 var(--filter_shadow);
 }
 .content_block{
     margin-bottom: 30px;
@@ -166,8 +198,8 @@ a{
     margin-top:20px;
     height: auto;
     border:2px solid rgba(228, 228, 166, 0.973);
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--footer-color);
+    color: var(--footertext-color);
     text-align: center;
     cursor: pointer;
 }  
@@ -181,6 +213,7 @@ a{
     text-align: center;
     margin-top:20px;
     margin-bottom: 10px;
+    background-color: var(--cars-color);
 }
 .quality div div h6{
     margin-top:6px;
@@ -192,8 +225,8 @@ a{
 .footer_hub{
     width: 100%;
     height: auto;
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--footer-color);
+    color: var(--footertext-color);
 }
 .footer_link{
     padding: 40px 5px;
@@ -224,3 +257,68 @@ hr{
     width:93%;
 }
 /*footer section css end*/
+
+@media only screen and (min-width: 576px) and (max-width:767px) {
+     
+    .footer_link{
+       padding: 10px 5px;
+   }
+   .footer_link ul{
+       margin-top: 10px;
+   }
+   hr{
+       margin-left: 10px;
+       width:90%;
+   }
+   .security_margin{
+       margin-top: -10px;
+       margin-left: -3px;
+   } 
+   .cares div>h5{
+       font-size: 14px;
+   }
+   .postion_search{
+       top: 49.3%;
+       left: 94%;
+   }
+   
+}
+
+@media only screen and (min-width: 320px) and (max-width:575px) {
+    .footer_hub{
+        text-align: center;
+    }
+   .footer_link{
+      padding: 4px 5px;
+  }
+  .footer_link ul{
+      margin-top: 10px;
+  }
+  hr{
+      margin-left: 5%;
+      width:90%;
+  }
+  .security_margin{
+      margin-left: 10px;
+  } 
+
+  .cares div>h2{
+   font-size: 22px;
+   margin-left: 10px;
+ }
+  .cares div>h5{
+      font-size: 10px;
+      margin-left: 10px;
+  }
+  .quality{
+   text-align: center;
+  }
+  .quality div div img,h6{
+   margin-left:35px;
+}
+  .postion_search{
+   top: 49.3%;
+   left: 88%;
+}
+  
+}

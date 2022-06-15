@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -10,7 +12,7 @@
         <link rel="icon" href="images/hublogo.png">
         <title>Shopping Hub</title>
     </head>
-    <body>
+    <body onload="getLocation()">
         <!--Navbar start-->
         <section class="navbar_section">
            <nav class="navbar fixed-top navbar-expand-lg bg-light">
@@ -39,13 +41,16 @@
                     <ul class="navbar-nav me-5 mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa fa-heart"></i></a>
-                           
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
-                         
-                        </li>
+                       </li>
                     </ul>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <span id="location_name"></span>
+                      </li>
+                  </ul>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -55,6 +60,12 @@
                             <a class="nav-link" href="#">Customer Care</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <i class="fa-solid fa-lightbulb theme" onclick="change_theme()"></i>
+                      </li>
+                  </ul>
                    
                   </div>
                </div>
@@ -136,19 +147,26 @@
 
        <!--extra offer card start-->
        <section class="extra_offer_card">
-         <div class="row">
-            <div class="col-lg-3 offer_image">
+         <div class="owl-carousel owl-theme offer-carousel">
+            <div class="item offer_image">
               <a href="#"><img src="images/flat_img/extra30.png" alt="extra30"></a>
             </div>
-            <div class="col-lg-3 offer_image">
+            <div class="item offer_image">
+              <a href="#"><img src="images/flat_img/extra33.png" alt="extra33"></a>
+            </div>
+            <div class="item offer_image">
               <a href="#"><img src="images/flat_img/extra35.png" alt="extra35"></a>
             </div>
-            <div class="col-lg-3 offer_image">
+            <div class="item offer_image">
+              <a href="#"><img src="images/flat_img/extra50.png" alt="extra50"></a>
+            </div>
+            <div class="item offer_image">
               <a href="#"><img src="images/flat_img/extra66.png" alt="extra66"></a>
             </div>
-            <div class="col-lg-3 offer_image">
+            <div class="item offer_image">
               <a href="#"><img src="images/flat_img/extra84.png" alt="extra84"></a>
             </div>
+           
          </div>
         
        </section>
@@ -305,18 +323,21 @@
         <div>
           <h2>UNMISSABLE BRANDS THIS SEASON</h2>
         </div>
-       <div class="row">
-          <div class="col-lg-3 product_image">
+       <div class="owl-carousel owl-theme offer-carousel">
+          <div class="item product_image_unmissable">
             <a href="#"><img src="images/product/product5.png" alt="unmissable_product_1"></a>
           </div>
-          <div class="col-lg-3 product_image">
+          <div class="item product_image_unmissable">
             <a href="#"><img src="images/product/product6.png" alt="unmissable_product_2"></a>
           </div>
-          <div class="col-lg-3 product_image">
+          <div class="item product_image_unmissable">
             <a href="#"><img src="images/product/product7.png" alt="unmissable_product_3"></a>
           </div>
-          <div class="col-lg-3 product_image">
-            <a href="#"><img src="images/product/product9.png" alt="unmissable_product_4"></a>
+          <div class="item product_image_unmissable">
+            <a href="#"><img src="images/product/product8.png" alt="unmissable_product_4"></a>
+          </div>
+          <div class="item product_image_unmissable">
+            <a href="#"><img src="images/product/product9.png" alt="unmissable_product_5"></a>
           </div>
        </div>
       </section>
@@ -332,19 +353,22 @@
 
           <!--discount offer carousel start-->
           <section class="extra_offer_card">
-            <div class="row">
-               <div class="col-lg-3 offer_image">
+            <div class="owl-carousel owl-theme offer-carousel">
+               <div class="item offer_image">
                  <a href="#"><img src="images/flat_img/flat_599.png" alt="flat_599"></a>
                </div>
-               <div class="col-lg-3 offer_image">
+               <div class="item offer_image">
                  <a href="#"><img src="images/flat_img/flat_699.png" alt="flat_699"></a>
                </div>
-               <div class="col-lg-3 offer_image">
+               <div class="item offer_image">
                  <a href="#"><img src="images/flat_img/flat_999.png" alt="flat_999"></a>
                </div>
-               <div class="col-lg-3 offer_image">
+               <div class="item offer_image">
                  <a href="#"></a><img src="images/flat_img/flat_80.png" alt="flat_80"></a>
                </div>
+               <div class="item offer_image">
+                <a href="#"></a><img src="images/flat_img/flat_70.png" alt="flat_70"></a>
+              </div>
             </div>
            
           </section>
@@ -410,44 +434,44 @@
             <h2>STUNNING DEALS ON PREMIUM BRANDS
           </div>
           <div class="row brand_row">
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product21.png" alt="brand_product_1"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product22.png" alt="brand_product_2"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product23.png" alt="brand_product_3"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product24.png" alt="brand_product_4"></a>
             </div>
           </div>
           <div class="row brand_row">
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product25.png" alt="brand_product_5"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product26.png" alt="brand_product_6"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product27.png" alt="brand_product_7"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product28.png" alt="brand_product_8"></a>
             </div>
           </div>
           <div class="row brand_row">
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product29.png" alt="brand_product_9"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product30.png" alt="brand_product_10"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product31.png" alt="brand_product_11"></a>
             </div>
-            <div class="col-lg-3 brand_img">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xl-12 brand_img">
               <a href="#"><img src="images/product/product32.png" alt="brand_product_12"></a>
             </div>
           </div>
@@ -456,27 +480,32 @@
 
        <!--footwear brand card start--> 
        <section class="footwear_card">
-         <div>
-           <h2>FOOTWEAR MEETS FASHION</h2>
-         </div>
-        <div class="row">
-           <div class="col-lg-3 footwear_image">
-             <a href="#"><img src="images/product/product33.png" alt="footwear_product_1"></a>
-           </div>
-           <div class="col-lg-3 footwear_image">
-             <a href="#"><img src="images/product/product34.png" alt="footwear_product_2"></a>
-           </div>
-           <div class="col-lg-3 footwear_image">
-             <a href="#"><img src="images/product/product36.png" alt="footwear_product_3"></a>
-           </div>
-           <div class="col-lg-3 footwear_image">
-             <a href="#"><img src="images/product/product37.png" alt="footwear_product_4"></a>
-           </div>
+        <div>
+          <h2>FOOTWEAR MEETS FASHION</h2>
         </div>
-      </section>
+       <div class="owl-carousel owl-theme img-carousel">
+          <div class="item footwear_image">
+            <a href="#"><img src="images/product/product33.png" alt="footwear_product_1"></a>
+          </div>
+          <div class="item footwear_image">
+            <a href="#"><img src="images/product/product34.png" alt="footwear_product_2"></a>
+          </div>
+          <div class="item footwear_image">
+            <a href="#"><img src="images/product/product35.png" alt="footwear_product_3"></a>
+          </div>
+          <div class="item footwear_image">
+            <a href="#"><img src="images/product/product36.png" alt="footwear_product_4"></a>
+          </div>
+          <div class="item footwear_image">
+            <a href="#"><img src="images/product/product37.png" alt="footwear_product_5"></a>
+          </div>
+          <div class="item footwear_image">
+            <a href="#"><img src="images/product/product38.png" alt="footwear_product_6"></a>
+          </div>
+       </div>
+     </section>
       <!--footwear brand card end-->
-
-
+    
 
         <!--Section cares start-->
               <section class="cares container-fluid">
@@ -496,15 +525,15 @@
         <!--Section quality start-->
               <section class="quality container">
                   <div class="row">
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="images/exchange.png" alt="exchange">
                           <h6>EASY EXCHANGE</h6>
                       </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/handpicked.png" alt="handpicked">
                         <h6>100% HANDPICKED</h6>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <img src="images/quality.png" alt="quality">
                         <h6>ASSURED QUALITY</h6>
                     </div>
@@ -516,7 +545,7 @@
         <footer class="footer_hub container-fluid">
             <div class="footer_hub">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_link">
                     <span>
                         Shopping Hub
                     </span>
@@ -530,7 +559,7 @@
                         <li><a href="#">Promotion Terms & Condition</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_link">
                     <span>
                         Help
                     </span>
@@ -544,7 +573,7 @@
                         <li><a href="#">How I Redeem My Coupon</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_link">
                     <span>
                         Shop By
                     </span>
@@ -558,7 +587,7 @@
                         <li><a href="#">Collection</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 footer_link">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 footer_link">
                     <span>
                         Follow Us
                     </span>
@@ -575,10 +604,10 @@
             <hr />
             <div class="payment">
                 <div class="row payment_section">
-                    <div class="col-lg-8 ms-4">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ms-4">
                         <span>Payment Methods</span>
                         <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-3">
                             <img src="images/netbanking.png" alt="netbanking">
                         </div>
                         <div class="col-lg-2">
@@ -587,7 +616,7 @@
                         <div class="col-lg-2">
                             <img src="images/card.png" alt="card">
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-3">
                             <img src="images/cashon.png" alt="cash">
                         </div>
                         <div class="col-lg-2">
@@ -595,7 +624,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="col-lg-2 ms-auto">
+                    <div class="security_margin col-lg-2 col-md-2 col-sm-4 col-xs-12">
                         <span>Secure Systems</span>
                         <div>
                             <img src="images/security.png" alt="security">
@@ -607,10 +636,15 @@
         </footer>
 
         <!--Footer end-->
-        <script src="index.js">
-          window.onload= loadCoupon()
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    </body>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="index.js" type="text/javascript">
+           window.onload= function(){
+             loadCoupon();
+           }
+        </script>
+      </body>
 </html>
