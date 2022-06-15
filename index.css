@@ -502,6 +502,15 @@ hr{
         left: 93%;
     
     }
+    .main_carousel_indicators{
+        bottom: -23px;
+        left:165px;
+    }
+    
+    .wallet_carousel_indicators{
+        bottom: -36.1%;
+        right: -29px;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width:767px) {
@@ -538,6 +547,15 @@ hr{
         top: 37px;
         left: 93%;
     
+    }
+    .main_carousel_indicators{
+        bottom: -23px;
+        left:150px;
+    }
+    
+    .wallet_carousel_indicators{
+        bottom: -47.1%;
+        right: -45px;
     }
     
 }
@@ -587,7 +605,15 @@ hr{
 #coupon button{
     top: 30px;
     left: 91%;
+}
+.main_carousel_indicators{
+    bottom: -23px;
+    left:100px;
+}
 
+.wallet_carousel_indicators{
+    bottom: -89.1%;
+    right: -30px;
 }
    
 }
