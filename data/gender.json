@@ -1,0 +1,16 @@
+{
+    "gender": [
+        {
+            "id": 1,
+            "gender_type": "male"
+        },
+        {
+            "id": 2,
+            "gender_type": "female"
+        },
+        {
+            "id": 3,
+            "gender_type": "kids"
+        }
+    ]
+}
