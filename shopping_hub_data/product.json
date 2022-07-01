@@ -1,0 +1,345 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "img": "https://i.ibb.co/qgMX650/product1.png",
+            "decription":"Classic Pique Tailored Fit Polo T-shirt",
+            "price": 999,
+            "brands":[
+                {
+                    "brand_id":1,
+                    "brand_name": "DNMX"
+                }
+            ],
+            "clothcategory_id": 2,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":2,
+            "discount_id": 1       
+        },
+        {
+            "id": 2,
+            "img": "https://i.ibb.co/k3hgnxq/product2.png",
+            "decription":"Low Rise Fitted Jeans",
+            "price": 1240,
+            "brands":[
+                {
+                    "brand_id":2,
+                    "brand_name": "MAX"
+                }
+            ],
+            "clothcategory_id": 8,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":11,
+            "discount_id": 2       
+        },
+        {
+            "id": 3,
+            "img": "https://i.ibb.co/sWyLVXR/product3.png",
+            "decription":"Plain Casual Shirt",
+            "price": 1800,
+            "brands":[
+                {
+                    "brand_id":17,
+                    "brand_name": "ALLENSOLLY"
+                }
+            ],
+            "clothcategory_id": 1,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":4,
+            "discount_id": 3     
+        },
+        {
+            "id": 4,
+            "img": "https://i.ibb.co/bPbCLMB/product4.png",
+            "decription":"Comfortable Trouser",
+            "price": 699,
+            "brands":[
+                {
+                    "brand_id":15,
+                    "brand_name": "PUMA"
+                }
+            ],
+            "clothcategory_id": 9,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":5,
+            "discount_id": 4       
+        },
+        {
+            "id": 5,
+            "img": "https://i.ibb.co/HF0N7qf/product5.png",
+            "decription":"black Leather Jacket",
+            "price": 2350,
+            "brands":[
+                {
+                    "brand_id":14,
+                    "brand_name": "SUGR"
+                }
+            ],
+            "clothcategory_id": 4,
+            "ocation_id": 4,
+            "gender_id": 2,
+            "size_id":3,
+            "discount_id": 5       
+        },
+        {
+            "id": 6,
+            "img": "https://i.ibb.co/Y33Bfmk/product6.png",
+            "decription":"Skinny Dark Dennim Jeans",
+            "price": 1350,
+            "brands":[
+                {
+                    "brand_id":12,
+                    "brand_name": "CALVIN KLEIN"
+                }
+            ],
+            "clothcategory_id": 8,
+            "ocation_id": 1,
+            "gender_id": 2,
+            "size_id":12,
+            "discount_id": 6      
+        },
+        {
+            "id": 7,
+            "img": "https://i.ibb.co/VMfj2rq/product7.png",
+            "decription":"Classic Solid Formal Shirt",
+            "price": 899,
+            "brands":[
+                {
+                    "brand_id":13,
+                    "brand_name": "LEVIS"
+                }
+            ],
+            "clothcategory_id": 1,
+            "ocation_id": 2,
+            "gender_id": 1,
+            "size_id":3,
+            "discount_id": 7       
+        },
+        {
+            "id": 8,
+            "img": "https://i.ibb.co/s5rr9pL/product8.png",
+            "decription":"Stylish Cotton Shorts",
+            "price": 549,
+            "brands":[
+                {
+                    "brand_id":6,
+                    "brand_name": "TRENDYOL"
+                }
+            ],
+            "clothcategory_id": 9,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":13,
+            "discount_id": 8       
+        },
+        {
+            "id": 9,
+            "img": "https://i.ibb.co/PFf8sM7/product9.png",
+            "decription":"Long Cotton Top",
+            "price": 1199,
+            "brands":[
+                {
+                    "brand_id":23,
+                    "brand_name": "ISHIN"
+                }
+            ],
+            "clothcategory_id": 6,
+            "ocation_id": 1,
+            "gender_id": 2,
+            "size_id":3,
+            "discount_id": 9      
+        },
+        {
+            "id": 10,
+            "img": "https://i.ibb.co/c6ZNYtg/product10.png",
+            "decription":"Mid Rise Skinny Fit Jeans",
+            "price": 1399,
+            "brands":[
+                {
+                    "brand_id":5,
+                    "brand_name": "STEVE MADDEN"
+                }
+            ],
+            "clothcategory_id": 8,
+            "ocation_id": 1,
+            "gender_id": 2,
+            "size_id":11,
+            "discount_id": 10       
+        },
+        {
+            "id": 11,
+            "img": "https://i.ibb.co/v3dHf6n/product11.png",
+            "decription":"Stylish Formal Chinos",
+            "price": 1999,
+            "brands":[
+                {
+                    "brand_id":30,
+                    "brand_name": "VANHEUSEN"
+                }
+            ],
+            "clothcategory_id": 10,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":14,
+            "discount_id": 1       
+        },
+        {
+            "id": 12,
+            "img": "https://i.ibb.co/5TCLMfp/product13.png",
+            "decription":"Solid Black Casual Shirst",
+            "price": 1200,
+            "brands":[
+                {
+                    "brand_id":27,
+                    "brand_name": "JOHN PLAYER"
+                }
+            ],
+            "clothcategory_id": 1,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":4,
+            "discount_id": 2       
+        },
+        {
+            "id": 13,
+            "img": "https://i.ibb.co/0r4RPhW/product14.png",
+            "decription":"Beautiful Multicolor One piece",
+            "price": 2150,
+            "brands":[
+                {
+                    "brand_id":16,
+                    "brand_name": "BIBA"
+                }
+            ],
+            "clothcategory_id": 6,
+            "ocation_id": 4,
+            "gender_id": 2,
+            "size_id":2,
+            "discount_id": 3       
+        },
+        {
+            "id": 14,
+            "img": "https://i.ibb.co/kM9s86v/product15.png",
+            "decription":"Styllish Jaipuri Kurti",
+            "price": 799,
+            "brands":[
+                {
+                    "brand_id":31,
+                    "brand_name": "RITI KUMAR"
+                }
+            ],
+            "clothcategory_id": 5,
+            "ocation_id": 3,
+            "gender_id": 2,
+            "size_id":3,
+            "discount_id": 4       
+        },
+        {
+            "id": 15,
+            "img": "https://i.ibb.co/tmLkGcp/product16.png",
+            "decription":"Stylish Partywaer Kuti Combo",
+            "price": 1399,
+            "brands":[
+                {
+                    "brand_id":4,
+                    "brand_name": "JAIPUR KURTI"
+                }
+            ],
+            "clothcategory_id": 5,
+            "ocation_id": 3,
+            "gender_id": 2,
+            "size_id":3,
+            "discount_id": 5       
+        },
+        {
+            "id": 16,
+            "img": "https://i.ibb.co/NWRgfHB/product17.png",
+            "decription":"Beautiful Comfy Plazo",
+            "price": 749,
+            "brands":[
+                {
+                    "brand_id":3,
+                    "brand_name": "MUJI"
+                }
+            ],
+            "clothcategory_id": 12,
+            "ocation_id": 1,
+            "gender_id": 2,
+            "size_id":2,
+            "discount_id": 6       
+        },
+        {
+            "id": 17,
+            "img": "https://i.ibb.co/6cQYxvD/product18.png",
+            "decription":"Multicolor Saree with Blouse Piece",
+            "price": 1549,
+            "brands":[
+                {
+                    "brand_id":32,
+                    "brand_name": "SAREE MALL"
+                }
+            ],
+            "clothcategory_id": 7,
+            "ocation_id": 3,
+            "gender_id": 2,
+            "size_id":5,
+            "discount_id": 7       
+        },
+        {
+            "id": 18,
+            "img": "https://i.ibb.co/KV6NXpG/product19.png",
+            "decription":"Brown Flat Sandals",
+            "price": 399,
+            "brands":[
+                {
+                    "brand_id":44,
+                    "brand_name": "CLARKS"
+                }
+            ],
+            "clothcategory_id": 24,
+            "ocation_id": 1,
+            "gender_id": 2,
+            "size_id":6,
+            "discount_id": 8       
+        },
+        {
+            "id": 19,
+            "img": "https://i.ibb.co/hZS6T4j/product20.png",
+            "decription":"stylish Casual Shoes",
+            "price": 1999,
+            "brands":[
+                {
+                    "brand_id":41,
+                    "brand_name": "FILLA"
+                }
+            ],
+            "clothcategory_id": 21,
+            "ocation_id": 1,
+            "gender_id": 1,
+            "size_id":9,
+            "discount_id": 9       
+        },
+        {
+            "id": 20,
+            "img": "https://i.ibb.co/z4YjWnf/product21.png",
+            "decription":"Cartoonish Kids Crocs",
+            "price": 249,
+            "brands":[
+                {
+                    "brand_id":34,
+                    "brand_name": "CROCS"
+                }
+            ],
+            "clothcategory_id": 19,
+            "ocation_id": 1,
+            "gender_id": 3,
+            "size_id":10,
+            "discount_id": 10      
+        }
+
+    ]
+}

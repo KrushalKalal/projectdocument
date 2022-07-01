@@ -1,0 +1,20 @@
+{
+    "ocations": [
+        {
+            "id": 1,
+            "ocation_type": "Casual"
+        },
+        {
+            "id": 2,
+            "ocation_type": "Work"
+        },
+        {
+            "id": 3,
+            "ocation_type": "Ethnic"
+        },
+        {
+            "id": 4,
+            "ocation_type": "Party"
+        }
+    ]
+}

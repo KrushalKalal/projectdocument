@@ -1,0 +1,20 @@
+{
+    "productcategory": [
+        {
+            "id": 1,
+            "category_type": "topwear"
+        },
+        {
+            "id": 2,
+            "category_type": "bottomwear"
+        },
+        {
+            "id": 3,
+            "category_type": "innerwear"
+        },
+        {
+            "id": 4,
+            "category_type": "footwear"
+        }
+    ]
+}
