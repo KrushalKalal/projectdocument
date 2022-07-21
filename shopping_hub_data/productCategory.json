@@ -2,19 +2,128 @@
     "productcategory": [
         {
             "id": 1,
-            "category_type": "topwear"
+            "category_type": "shirts",
+            "productType_id": 1
         },
         {
             "id": 2,
-            "category_type": "bottomwear"
+            "category_type": "t-shirts",
+            "productType_id": 1
         },
         {
             "id": 3,
-            "category_type": "innerwear"
+            "category_type": "sweatshirts",
+            "productType_id": 1
         },
         {
             "id": 4,
-            "category_type": "footwear"
+            "category_type": "hoodies",
+            "productType_id": 1
+        },
+        {
+            "id": 5,
+            "category_type": "kurti",
+            "productType_id": 1
+        },
+        {
+            "id": 6,
+            "category_type": "top",
+            "productType_id": 1
+        },
+        {
+            "id": 7,
+            "category_type": "blouse",
+            "productType_id": 1
+        },
+        {
+            "id": 8,
+            "category_type": "jeans",
+            "productType_id": 2
+        },
+        {
+            "id": 9,
+            "category_type": "trouser",
+            "productType_id": 2
+        },
+        {
+            "id": 10,
+            "category_type": "chinos",
+            "productType_id": 2
+        },
+        {
+            "id": 11,
+            "category_type": "leggings",
+            "productType_id": 2
+        },
+        {
+            "id": 12,
+            "category_type": "plazzos",
+            "productType_id": 2
+        },
+        {
+            "id": 13,
+            "category_type": "ghaghras",
+            "productType_id": 2
+        },
+        {
+            "id": 14,
+            "category_type": "bra",
+            "productType_id": 3
+        },
+        {
+            "id": 15,
+            "category_type": "panties",
+            "productType_id": 3
+        },
+        {
+            "id": 16,
+            "category_type": "vests",
+            "productType_id": 3
+        },
+        {
+            "id": 17,
+            "category_type": "briefs",
+            "productType_id": 3
+        },
+        {
+            "id": 18,
+            "category_type": "casual",
+            "productType_id": 4
+        },
+        {
+            "id": 19,
+            "category_type": "flip floap",
+            "productType_id": 4
+        },
+        {
+            "id": 20,
+            "category_type": "sandals",
+            "productType_id": 4
+        },
+        {
+            "id": 21,
+            "category_type": "sneakers",
+            "productType_id": 4
+        },
+        {
+            "id": 22,
+            "category_type": "sports shoes",
+            "productType_id": 4
+        },
+        {
+            "id": 23,
+            "category_type": "formal shoes",
+            "productType_id": 4
+        },
+        {
+            "id": 24,
+            "category_type": "flat sandals",
+            "productType_id": 4
+        },
+        {
+            "id": 25,
+            "category_type": "heels",
+            "productType_id": 4
         }
     ]
 }
