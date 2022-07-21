@@ -1,59 +1,59 @@
 {
     "collectiontypes": [
         {
-           "id": 1,
+           "collectionCategory_id": 1,
            "collection_type": "main Carousel"
         },
         {
-            "id": 2,
+            "collectionCategory_id": 2,
             "collection_type": "her Carousel"
         },
         {
-            "id": 3,
+            "collectionCategory_id": 3,
             "collection_type": "him Carousel"
         },
         {
-            "id": 4,
+            "collectionCategory_id": 4,
             "collection_type": "combine Carousel"
         },
         {
-            "id": 5,
+            "collectionCategory_id": 5,
             "collection_type": "extra off"
         },
         {
-            "id": 6,
+            "collectionCategory_id": 6,
             "collection_type": "flat off"
         },
         {
-            "id": 7,
+            "collectionCategory_id": 7,
             "collection_type": "summer style"
         },
         {
-            "id": 8,
+            "collectionCategory_id": 8,
             "collection_type": "coveted brand"
         },
         {
-            "id": 9,
+            "collectionCategory_id": 9,
             "collection_type": "premium brand"
         },
         {
-            "id": 10,
+            "collectionCategory_id": 10,
             "collection_type": "unmissable brand"
         },
         {
-            "id": 11,
+            "collectionCategory_id": 11,
             "collection_type": "Ethnicwear"
         },
         {
-            "id": 12,
+            "collectionCategory_id": 12,
             "collection_type": "Footwear"
         },
         {
-            "id": 13,
+            "collectionCategory_id": 13,
             "collection_type": "wallet"
         },
         {
-            "id": 14,
+            "collectionCategory_id": 14,
             "collection_type": "discount coupon"
         }
     ]

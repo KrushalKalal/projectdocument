@@ -29,7 +29,7 @@ http://localhost:7800/filter/1?sizeId=2
 http://localhost:7800/filter/1?genderId=1
 
 10. Product on basis of Brand & Ocation
-http://localhost:7800/filter/1?ocationId=1
+http://localhost:7800/filter/1?occasionId=1
 
 
 #3rd Page 

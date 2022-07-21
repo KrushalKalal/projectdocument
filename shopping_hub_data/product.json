@@ -12,7 +12,7 @@
                 }
             ],
             "productCategory_id": 2,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":2,
             "discount_id": 1       
@@ -29,7 +29,7 @@
                 }
             ],
             "productCategory_id": 8,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":11,
             "discount_id": 2       
@@ -46,7 +46,7 @@
                 }
             ],
             "productCategory_id": 1,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":4,
             "discount_id": 3     
@@ -63,7 +63,7 @@
                 }
             ],
             "productCategory_id": 9,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":5,
             "discount_id": 4       
@@ -80,7 +80,7 @@
                 }
             ],
             "productCategory_id": 4,
-            "ocation_id": 4,
+            "occasion_id": 4,
             "gender_id": 2,
             "size_id":3,
             "discount_id": 5       
@@ -97,7 +97,7 @@
                 }
             ],
             "productCategory_id": 8,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 2,
             "size_id":12,
             "discount_id": 6      
@@ -114,7 +114,7 @@
                 }
             ],
             "productCategory_id": 1,
-            "ocation_id": 2,
+            "occasion_id": 2,
             "gender_id": 1,
             "size_id":3,
             "discount_id": 7       
@@ -131,7 +131,7 @@
                 }
             ],
             "productCategory_id": 9,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":13,
             "discount_id": 8       
@@ -148,7 +148,7 @@
                 }
             ],
             "productCategory_id": 6,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 2,
             "size_id":3,
             "discount_id": 9      
@@ -165,7 +165,7 @@
                 }
             ],
             "productCategory_id": 8,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 2,
             "size_id":11,
             "discount_id": 10       
@@ -182,7 +182,7 @@
                 }
             ],
             "productCategory_id": 10,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":14,
             "discount_id": 1       
@@ -199,7 +199,7 @@
                 }
             ],
             "productCategory_id": 1,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":4,
             "discount_id": 2       
@@ -216,7 +216,7 @@
                 }
             ],
             "productCategory_id": 6,
-            "ocation_id": 4,
+            "occasion_id": 4,
             "gender_id": 2,
             "size_id":2,
             "discount_id": 3       
@@ -233,7 +233,7 @@
                 }
             ],
             "productCategory_id": 5,
-            "ocation_id": 3,
+            "occasion_id": 3,
             "gender_id": 2,
             "size_id":3,
             "discount_id": 4       
@@ -250,7 +250,7 @@
                 }
             ],
             "productCategory_id": 5,
-            "ocation_id": 3,
+            "occasion_id": 3,
             "gender_id": 2,
             "size_id":3,
             "discount_id": 5       
@@ -267,7 +267,7 @@
                 }
             ],
             "productCategory_id": 12,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 2,
             "size_id":2,
             "discount_id": 6       
@@ -284,7 +284,7 @@
                 }
             ],
             "productCategory_id": 7,
-            "ocation_id": 3,
+            "occasion_id": 3,
             "gender_id": 2,
             "size_id":5,
             "discount_id": 7       
@@ -301,7 +301,7 @@
                 }
             ],
             "productCategory_id": 24,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 2,
             "size_id":6,
             "discount_id": 8       
@@ -318,7 +318,7 @@
                 }
             ],
             "productCategory_id": 21,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 1,
             "size_id":9,
             "discount_id": 9       
@@ -335,7 +335,7 @@
                 }
             ],
             "productCategory_id": 19,
-            "ocation_id": 1,
+            "occasion_id": 1,
             "gender_id": 3,
             "size_id":10,
             "discount_id": 10      

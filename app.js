@@ -6,7 +6,7 @@ dotenv.config();
 let port = process.env.PORT || 9870;
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
-let mongoUrl = process.env.MongoLocalURL;
+let mongoUrl = process.env.MongoLiveURL;
 let db;
 
 app.use(morgan('common'))
@@ -43,7 +43,7 @@ app.get('/imagecollection',(req,res)=>{
     }else{
         query = {}
     }
-    db.collection('imageList').find(query).toArray((err,result)=>{
+    db.collection('imageCollection').find(query).toArray((err,result)=>{
         if(err) throw err;
         res.send(result);
     })
@@ -69,12 +69,12 @@ app.get('/filter/:brandId',(req,res) => {
     let brandId = Number(req.params.brandId);
     let sizeId = Number(req.query.sizeId);
     let genderId = Number(req.query.genderId);
-    let ocationId = Number(req.query.ocationId);
-    if(sizeId && genderId && occationId){
+    let occasionId = Number(req.query.occasionId);
+    if(sizeId && genderId && occasionId){
         query = {
             "brands.brand_id":brandId,
             size_id:sizeId,
-            ocation_id:ocationId,
+            occasion_Id:occasionId,
             gender_id:genderId
         }
     }
@@ -91,7 +91,7 @@ app.get('/filter/:brandId',(req,res) => {
     }else if(ocationId){
         query = {
             "brands.brand_id":brandId,
-            ocation_id:ocationId
+            occasion_Id:occasionId
         }
     } else{
         query = {
@@ -116,7 +116,7 @@ app.get('/details/:id',(req,res)=>{
 MongoClient.connect(mongoUrl, (err,client)=> {
      if(err){console.log("Error While Connecting")}
      else{
-         db = client.db('shoppinghub');
+         db = client.db('shoppingHub');
          app.listen(port, ()=> {
              console.log(`Listening on port ${port}`)
          })
