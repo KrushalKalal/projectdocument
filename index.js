@@ -1,3 +1,5 @@
+
+
 var current_location = document.getElementById("location_name");
 
 function getLocation() {

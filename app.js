@@ -36,6 +36,13 @@ app.get('/brandlist',(req,res)=>{
     })
 })
 
+app.get('/genderList',(req,res)=>{
+    db.collection('gender').find().toArray((err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+})
+
 app.get('/imagecollection',(req,res)=>{
     let query = {}
     let collectionId = Number(req.query.collectionId);
