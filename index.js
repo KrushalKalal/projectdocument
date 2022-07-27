@@ -1,5 +1,4 @@
 
-
 var current_location = document.getElementById("location_name");
 
 function getLocation() {
@@ -13,7 +12,7 @@ function getLocation() {
 function showPosition(data) {
   let latitude = data.coords.latitude;
   let longitude = data.coords.longitude;
-  const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+  const url = `https:api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
   fetch(url,{method:'GET'})
   .then((res) => res.json())
   .then((data) => {
@@ -62,58 +61,60 @@ if(getTheme === "DARK"){
 
 
 
-$(document).ready(function(){
-    $(".img-carousel").owlCarousel({
-      margin:10,
-      loop:false,
-      nav:true,
-      dots:false,
-      navText:[ "<i class='fa fa-caret-left'></i>",
-                "<i class='fa fa-caret-right'></i>"],
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:3
-        },
-        1000:{
-          items:4
-        },
-        1200:{
-            items:4
-        }
-      },
-
-    });
-   });
-
    $(document).ready(function(){
-    $(".offer-carousel").owlCarousel({
-      margin:10,
-      loop:false,
-      nav:true,
-      dots:false,
-      navText:[ "<i class='fa fa-caret-left'></i>",
-                "<i class='fa fa-caret-right'></i>"],
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:3
-        },
-        1000:{
-          items:4
-        },
-        1200:{
-            items:4
-        }
-      },
+     $(".img-carousel").owlCarousel({
+       margin:10,
+       loop:false,
+       nav:true,
+       dots:false,
+       navText:[ "<i class='fa fa-caret-left'></i>",
+                 "<i class='fa fa-caret-right'></i>"],
+       autoplay: true,
+       autoplayHoverPause: true,
+       responsive:{
+         0:{
+           items:1
+         },
+         600:{
+           items:3
+         },
+         1000:{
+           items:4
+         },
+         1200:{
+             items:4
+         }
+       },
 
+     });
     });
-   });
+
+
+
+    $(document).ready(function(){
+     $(".offer-carousel").owlCarousel({
+       margin:10,
+       loop:false,
+       nav:true,
+       dots:false,
+       navText:[ "<i class='fa fa-caret-left'></i>",
+                 "<i class='fa fa-caret-right'></i>"],
+       autoplay: true,
+       autoplayHoverPause: true,
+       responsive:{
+         0:{
+           items:1
+         },
+         600:{
+           items:3
+         },
+         1000:{
+           items:4
+         },
+         1200:{
+             items:4
+         }
+       },
+
+     });
+    });
