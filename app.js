@@ -1,6 +1,8 @@
 let express = require('express');
 let app = express();
+
 const mongoose = require('mongoose');
+
 let morgan = require('morgan');
 let dotenv = require('dotenv');
 dotenv.config();
@@ -8,6 +10,8 @@ let port = process.env.PORT || 9870;
 const hostname = 'localhost';
 let cors = require('cors');
 let bodyParser = require('body-parser');
+const superagent = require('superagent');
+const request = require('request');
 let mongoUrl = process.env.MongoLiveURL
 
 
@@ -21,6 +25,10 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
+})
+
+app.get('/',(req,res) => {
+    res.send('<a href="https://github.com/login/oauth/authorize?client_id=dfe87c299d59609b9dd5">Login With Git</a>')
 })
 
 const AuthController = require('./controller/authController');
@@ -62,7 +70,40 @@ app.use('/api',ProductTypeController)
 const OrderController = require('./controller/orderController');
 app.use('/api',OrderController)
 
+app.get('/oauth',(req,res) => {
+    const code = req.query.code;
+    if(!code){
+        res.send({
+            success:false,
+            message: 'Error While Login'
+        })
+    }
 
+    superagent
+    .post('https://github.com/login/oauth/access_token')
+    .send({
+        client_id:'dfe87c299d59609b9dd5',
+        client_secret:'895498e9b1aa93aaf2e0db281e09a93f63b58182',
+        code:code
+    })
+    .set('Accept','application/json')
+    .end((err,result) => {
+        if(err) throw err;
+        let access_token = result.body.access_token;
+        let option = {
+            uri:'https://api.github.com/user',
+            method:'GET',
+            headers:{
+                'Accept':'application/json',
+                'Authorization':`token ${access_token}`,
+                'User-Agent':'mycode'
+            }
+        }
+        request(option,(err,response,body) => {
+            res.send(body)
+        })
+    })
+})
 
 mongoose.connect(mongoUrl,
     { useNewUrlParser: true, useUnifiedTopology: true }
