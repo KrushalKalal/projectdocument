@@ -4,10 +4,11 @@ const mongoose = require('mongoose');
 let morgan = require('morgan');
 let dotenv = require('dotenv');
 dotenv.config();
-let port = 5000;
+let port = process.env.PORT || 9870;
 const hostname = 'localhost';
 let cors = require('cors');
 let bodyParser = require('body-parser');
+let mongoUrl = process.env.MongoLiveURL
 
 
 app.use(morgan('common'));
@@ -63,7 +64,7 @@ app.use('/api',OrderController)
 
 
 
-mongoose.connect('mongodb+srv://shoppinghub:shoppinghub123@cluster0.w4byv.mongodb.net/shoppingHub?retryWrites=true&w=majority',
+mongoose.connect(mongoUrl,
     { useNewUrlParser: true, useUnifiedTopology: true }
 ).then(client => {
     app.listen(port, hostname, () => {
