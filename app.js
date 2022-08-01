@@ -1,196 +1,78 @@
 let express = require('express');
 let app = express();
+const mongoose = require('mongoose');
 let morgan = require('morgan');
 let dotenv = require('dotenv');
 dotenv.config();
-let port = process.env.PORT || 9870;
-let mongo = require('mongodb');
+let port = 5000;
+const hostname = 'localhost';
 let cors = require('cors');
-let MongoClient = mongo.MongoClient;
 let bodyParser = require('body-parser');
-let mongoUrl = process.env.MongoLiveURL;
 
-let db;
 
 app.use(morgan('common'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/',(req,res)=>{
-    res.send("Response from ShoppingHub");
-
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
 })
 
-app.get('/collectiontype',(req,res)=>{
-    db.collection('collectionCategory').find().toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    })
-})
+const AuthController = require('./controller/authController');
+app.use('/api/auth',AuthController);
 
-app.get('/brandlist',(req,res)=>{
-    db.collection('brand').find().toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    })
-})
+const BrandController = require('./controller/brandController');
+app.use('/api',BrandController)
 
-app.get('/genderList',(req,res)=>{
-    db.collection('gender').find().toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    })
-})
+const DiscountController = require('./controller/discountController');
+app.use('/api',DiscountController)
 
-app.get('/imagecollection',(req,res)=>{
-    let query = {}
-    let collectionId = Number(req.query.collectionId);
-    let brandId = Number(req.query.brandId);
-    let discountId = Number(req.query.discountId)
-    if(collectionId){
-        query = {collectionCategory_id:collectionId}
-    }else if(brandId){
-        query = {brand_id:brandId}
-    }else if(discountId){
-        query = {discount_id:discountId}
-    }else{
-        query = {}
-    }
-    db.collection('imageCollection').find(query).toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    })
-})
+const CollectionCategoryController = require('./controller/collectionCategoryController');
+app.use('/api',CollectionCategoryController)
 
-app.get('/products',(req,res)=>{
-    let query = {}
-    let brandId = Number(req.query.brandId);
-    if(brandId){
-        query = {"brands.brand_id":brandId}
-    }else{
-        query = {}
-    }
-    db.collection('product').find(query).toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    })
-})
+const ImageCollectionController = require('./controller/imageCollectionController');
+app.use('/api',ImageCollectionController)
+
+const GenderController = require('./controller/genderController');
+app.use('/api',GenderController)
+
+const ColorController = require('./controller/colorController');
+app.use('/api',ColorController)
+
+const SizeController = require('./controller/sizeController');
+app.use('/api',SizeController)
+
+const OccasionController = require('./controller/occasionController');
+app.use('/api',OccasionController)
+
+const ProductController = require('./controller/productController');
+app.use('/api',ProductController)
+
+const ProductCategoryController = require('./controller/productCategoryController');
+app.use('/api',ProductCategoryController)
+
+const ProductTypeController = require('./controller/productTypeController');
+app.use('/api',ProductTypeController)
+
+const OrderController = require('./controller/orderController');
+app.use('/api',OrderController)
 
 
-app.get('/filter/:brandId',(req,res) => {
-    let query = {}
-    let brandId = Number(req.params.brandId);
-    let sizeId = Number(req.query.sizeId);
-    let genderId = Number(req.query.genderId);
-    let occasionId = Number(req.query.occasionId);
-    if(sizeId && genderId && occasionId){
-        query = {
-            "brands.brand_id":brandId,
-            size_id:sizeId,
-            occasion_Id:occasionId,
-            gender_id:genderId
-        }
-    }
-    else if(sizeId){
-        query = {
-            "brands.brand_id":brandId,
-             size_id:sizeId
-        }
-    }else if(genderId){
-        query = {
-            "brands.brand_id":brandId,
-            gender_id:genderId
-        }
-    }else if(ocationId){
-        query = {
-            "brands.brand_id":brandId,
-            occasion_Id:occasionId
-        }
-    } else{
-        query = {
-            "brands.brand_id":brandId,
-        }
-    }
-    db.collection('product').find(query).toArray((err,result) => {
-        if(err) throw err;
-        res.send(result)
-    })
 
-})
-
-app.get('/details/:id',(req,res)=>{
-    let id = Number(req.params.id);
-    db.collection('product').find({product_id:id}).toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    })
-})
-
-app.post('/productItem',(req,res) => {
-    if(Array.isArray(req.body.id)){
-        db.collection('product').find({product_id:{$in:req.body.id}}).toArray((err,result)=>{
-            if(err) throw err;
-             res.send(result); 
-        })
-    }else{
-        res.send("Invalid input");  
-    }
-})
-
-app.post('/placeOrder',(req,res)=>{
-    db.collection('orders').insert(req.body, (err,result)=>{
-        if(err) throw err;
-        res.send('Order Placed');
-    })
-})
-
-app.get('/orderList',(req,res)=>{
-    let email = req.query.email;
-    let query = {}
-    if(email){
-        query = {email:email}
-    }
-    db.collection('orders').find(query).toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    })
-})
-
-app.put('/updateOrder/:id',(req,res)=>{
-     let id = Number(req.params.id);
-     db.collection('orders').updateOne(
-        {order_id:id},
-         {
-            $set:{
-                "status":req.body.status,
-                "bank_name":req.body.bank_name,
-                "date":req.body.date
-            }
-         },(err,result)=>{
-            if(err) throw err;
-            res.send("Order Updated");
-         }
-     )
-})
-
-app.delete('/deleteOrder/:id',(req,res) => {
-    let id =  Number(req.params.id)
-    db.collection('orders').remove({order_id:id},(err,result) => {
-      if(err) throw err;
-      res.send('Order Deleted')
-    })
+mongoose.connect('mongodb+srv://shoppinghub:shoppinghub123@cluster0.w4byv.mongodb.net/shoppingHub?retryWrites=true&w=majority',
+    { useNewUrlParser: true, useUnifiedTopology: true }
+).then(client => {
+    app.listen(port, hostname, () => {
+        console.log(`Server running at http://${hostname}:${port}/`)
+    });
+}).catch(err => {
+    console.log(err);
 })
 
 
 
 
-MongoClient.connect(mongoUrl, (err,client)=> {
-     if(err){console.log("Error While Connecting")}
-     else{
-         db = client.db('shoppingHub');
-         app.listen(port, ()=> {
-             console.log(`Listening on port ${port}`)
-         })
-     }
-})
